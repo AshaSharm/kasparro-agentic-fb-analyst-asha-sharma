@@ -1,0 +1,85 @@
+{
+  "recommendations": [
+    {
+      "campaign_name": "-omen-studio sports",
+      "current_ctr": 0.009563218390804597,
+      "original_message": "Breathable cotton that moves with you \u2014 limited offer on women panties.",
+      "new_message": "Now try our improved -omen-studio sports comfort range!",
+      "strategy": "Add urgency",
+      "reasoning": "Automated creative optimization based on analytic insights"
+    },
+    {
+      "campaign_name": "m-n bold colors drop",
+      "current_ctr": 0.007626175852966539,
+      "original_message": "Seamless confidence for every day \u2014 new men trunks.",
+      "new_message": "Now try our improved m-n bold colors drop comfort range!",
+      "strategy": "Add urgency",
+      "reasoning": "Automated creative optimization based on analytic insights"
+    },
+    {
+      "campaign_name": "me   premium  modal",
+      "current_ctr": 0.006079735206968655,
+      "original_message": "Doctors recommend breathable microfiber \u2014 meet our men briefs.",
+      "new_message": "Now try our improved me   premium  modal comfort range!",
+      "strategy": "Add urgency",
+      "reasoning": "Automated creative optimization based on analytic insights"
+    },
+    {
+      "campaign_name": "me bold colors drop",
+      "current_ctr": 0.009151432778902863,
+      "original_message": "Breathable microfiber that moves with you \u2014 limited offer on men boxers.",
+      "new_message": "Now try our improved me bold colors drop comfort range!",
+      "strategy": "Add urgency",
+      "reasoning": "Automated creative optimization based on analytic insights"
+    },
+    {
+      "campaign_name": "men  bold  colors  drop",
+      "current_ctr": 0.009778879331318806,
+      "original_message": "3\u2011pack deal ends tonight \u2014 upgrade your men drawer with trunks.",
+      "new_message": "Now try our improved men  bold  colors  drop comfort range!",
+      "strategy": "Add urgency",
+      "reasoning": "Automated creative optimization based on analytic insights"
+    },
+    {
+      "campaign_name": "men  bold  coors  drop",
+      "current_ctr": 0.007167298622029039,
+      "original_message": "3\u2011pack deal ends tonight \u2014 upgrade your men drawer with inner vests.",
+      "new_message": "Now try our improved men  bold  coors  drop comfort range!",
+      "strategy": "Add urgency",
+      "reasoning": "Automated creative optimization based on analytic insights"
+    },
+    {
+      "campaign_name": "men  signture  soft",
+      "current_ctr": 0.005513856408676535,
+      "original_message": "Seamless confidence for every day \u2014 new men briefs.",
+      "new_message": "Now try our improved men  signture  soft comfort range!",
+      "strategy": "Add urgency",
+      "reasoning": "Automated creative optimization based on analytic insights"
+    },
+    {
+      "campaign_name": "men -old colors drop",
+      "current_ctr": 0.008339308861248241,
+      "original_message": "No ride\u2011up guarantee \u2014 best\u2011selling men inner vests back in stock.",
+      "new_message": "Now try our improved men -old colors drop comfort range!",
+      "strategy": "Add urgency",
+      "reasoning": "Automated creative optimization based on analytic insights"
+    },
+    {
+      "campaign_name": "men b-ld colors drop",
+      "current_ctr": 0.006624495328601204,
+      "original_message": "Ultra\u2011soft waistband, no marks \u2014 premium men briefs.",
+      "new_message": "Now try our improved men b-ld colors drop comfort range!",
+      "strategy": "Add urgency",
+      "reasoning": "Automated creative optimization based on analytic insights"
+    },
+    {
+      "campaign_name": "men bld colors drop",
+      "current_ctr": 0.009396337653257775,
+      "original_message": "All\u2011day comfort, zero pinch \u2014 try our men inner vests!",
+      "new_message": "Now try our improved men bld colors drop comfort range!",
+      "strategy": "Add urgency",
+      "reasoning": "Automated creative optimization based on analytic insights"
+    }
+  ],
+  "llm_output": ""
+}

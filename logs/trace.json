@@ -1,0 +1,28 @@
+{
+  "query": "Analyze ROAS drop in last 7 days",
+  "steps": {
+    "subtasks": [
+      {
+        "id": 1,
+        "task": "summarize data",
+        "agent": "data_agent"
+      },
+      {
+        "id": 2,
+        "task": "find ROAS/CTR trends",
+        "agent": "insight_agent"
+      },
+      {
+        "id": 3,
+        "task": "validate hypotheses",
+        "agent": "evaluator"
+      },
+      {
+        "id": 4,
+        "task": "recommend creatives",
+        "agent": "creative_generator"
+      }
+    ],
+    "llm_plan_explanation": "```json\n[\n  {\n    \"name\": \"Collect ROAS data for the last 7 days\",\n    \"agent\": \"DataCollector\"\n  },\n  {\n    \"name\": \"Calculate ROAS and compare to the previous 7\u2011day period\",\n    \"agent\": \"MetricCalculator\"\n  },\n  {\n    \"name\": \"Identify campaigns with significant ROAS decline\",\n    \"agent\": \"CampaignPerformanceReview\"\n  },\n  {\n    \"name\": \"Analyze spend, clicks, conversions, and cost per acquisition for those campaigns\",\n    \"agent\": \"ConversionAnalysis\"\n  },\n  {\n    \"name\": \"Examine audience segments and any changes in targeting or reach\",\n    \"agent\": \"AudienceAnalysis\"\n  },\n  {\n    \"name\": \"Review ad creative performance, relevance scores, and creative fatigue\",\n    \"agent\": \"CreativeAnalysis\"\n  },\n  {\n    \"name\": \"Investigate external factors (seasonality, competitor activity, platform updates)\",\n    \"agent\": \"ExternalFactorsReview\"\n  },\n  {\n    \"name\": \"Generate insights, root\u2011cause analysis, and actionable recommendations report\",\n    \"agent\": \"ReportGenerator\"\n  }\n]\n```"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "validated_hypotheses": [
+    {
+      "hypothesis": "ROAS dropped in the last period",
+      "confidence": 0.95,
+      "evidence": "ROAS change of -0.77 detected",
+      "quantitative_validation": true,
+      "details": {
+        "roas_change": -0.7702613024034539
+      }
+    },
+    {
+      "hypothesis": "Several campaigns have low CTR needing creative refresh",
+      "confidence": 0.9,
+      "evidence": "82 campaigns below CTR threshold",
+      "quantitative_validation": true,
+      "details": {
+        "low_ctr_count": 82
+      }
+    }
+  ],
+  "llm_output": "```json\n[\n  {\n    \"id\": \"H1\",\n    \"confidence\": 0.82,\n    \"evidence\": [\n      \"ROAS dropped by 0.77 (from 8.41 to 7.64) in the last period, matching the hypothesis that ROAS has declined.\",\n      \"Multiple campaigns with identical creative messages (e.g., \\\"men bold colors drop\\\") show CTRs as low as 0.006\u20130.009, indicating creative fatigue.\"\n    ]\n  },\n  {\n    \"id\": \"H2\",\n    \"confidence\": 0.78,\n    \"evidence\": [\n      \"The dataset reports 82 campaigns with low CTR, which is the exact number supplied in the hypothesis.\",\n      \"Many of these low\u2011CTR campaigns use similar creative themes and copy, suggesting audience overlap and the need for a creative refresh.\"\n    ]\n  },\n  {\n    \"id\": \"H3\",\n    \"confidence\": 0.65,\n    \"evidence\": [\n      \"Impression split: 2078 on Facebook vs. 2038 on Instagram; overall CTR is 0.013, but low\u2011CTR campaigns are concentrated on Facebook.\",\n      \"Facebook\u2019s higher CPC during the period could explain the ROAS decline, supporting a platform\u2011specific drift.\"\n    ]\n  },\n  {\n    \"id\": \"H4\",\n    \"confidence\": 0.70,\n    \"evidence\": [\n      \"Mean_ROAS (7.64) is lower than the overall mean (9.69) and the recent 7\u2011day mean, despite high spend on low\u2011CTR campaigns.\",\n      \"Low\u2011CTR campaigns typically incur higher CPC, which reduces ROAS, indicating a bid\u2011strategy misalignment.\"\n    ]\n  },\n  {\n    \"id\": \"H5\",\n    \"confidence\": 0.55,\n    \"evidence\": [\n      \"Data covers Jan\u2013Mar; early March marks a shift from winter to spring apparel, which may reduce relevance of winter\u2011centric creatives.\",\n      \"The ROAS decline aligns temporally with this seasonal transition.\"\n    ]\n  },\n  {\n    \"id\": \"H6\",\n    \"confidence\": 0.60,\n    \"evidence\": [\n      \"Creative type distribution: 1455 video, 1413 image, 630 UGC, 618 carousel. Low\u2011CTR campaigns often use image or carousel formats.\",\n      \"Video ads generally have higher engagement; under\u2011use of video could limit performance.\"\n    ]\n  },\n  {\n    \"id\": \"H7\",\n    \"confidence\": 0.75,\n    \"evidence\": [\n      \"Many low\u2011CTR campaigns share similar copy lines such as \\\"Breathable cotton that moves with you\u2026\\\" and \\\"Seamless confidence for every day\u2026\\\".\",\n      \"Repetition of copy can reduce perceived novelty and click\u2011through rates.\"\n    ]\n  },\n  {\n    \"id\": \"H8\",\n    \"confidence\": 0.00,\n    \"evidence\": [\n      \"The hypothesis text is incomplete; no quantitative data or evidence is available to evaluate it.\"\n    ]\n  }\n]\n```"
+}
