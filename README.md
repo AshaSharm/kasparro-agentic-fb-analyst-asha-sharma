@@ -81,7 +81,6 @@ kasparro-agentic-fb-analyst/
 │
 ├── README.md                # This document
 ├── requirements.txt         # Python dependencies
-├── Makefile                # Shortcut for running the pipeline
 │
 ├── config/
 │   └── config.yaml         # Pipeline and API config
