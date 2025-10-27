@@ -143,7 +143,7 @@ Underperforming campaigns receive personalized creative message suggestions.
 
 Reports deliver clear, actionable insights for data-driven marketing decisions.
 
-## Reflection Loop Example
+### Reflection Loop Example
 The evaluator checks each hypothesis against a confidence threshold (e.g., 0.6). If any fall below, it would retry with a revised plan or data. In the example below, both hypotheses met threshold on the first attempt so only one attempt is logged.
 {
   "attempt": 1,
@@ -169,6 +169,13 @@ The evaluator checks each hypothesis against a confidence threshold (e.g., 0.6).
   ]
 }
 
+### Evaluator Pass Example
+"hypothesis": "ROAS dropped in the last period",
+      "confidence": 0.95,
+      "evidence": "ROAS change of 3.79 detected",
+      "quantitative_validation": true,
+      "details": {
+        "roas_change": 3.7935774557877355
 
 📝 Notes
 
