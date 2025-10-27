@@ -1,14 +1,14 @@
-🧠 Kasparro Agentic Facebook Performance Analyst
-🚀 Overview
+### 🧠 Kasparro Agentic Facebook Performance Analyst
+### 🚀 Overview
 
 Kasparro Agentic FB Analyst is an AI-driven multi-agent system designed to analyze Facebook Ads performance.
 It autonomously diagnoses causes behind Return On Ad Spend (ROAS) fluctuations, generates data-driven hypotheses, validates them quantitatively, and recommends optimized creative messaging to improve campaign results.
 
 ![image alt](https://github.com/AshaSharm/kasparro-agentic-fb-analyst-asha-sharma/blob/main/flowchart.png?raw=true)
 
-🖼️ System Architecture
+### 🖼️ System Architecture
 
-✨ Key Features
+### ✨ Key Features
 
 🧩 Decomposes user queries into modular analytic subtasks
 
@@ -28,8 +28,8 @@ It autonomously diagnoses causes behind Return On Ad Spend (ROAS) fluctuations, 
 
 🧾 Trace logs all agent steps, reasoning, and outputs for reproducibility
 
-⚙️ Getting Started
-✅ Prerequisites
+### ⚙️ Getting Started
+### ✅ Prerequisites
 
 Python 3.10+
 
@@ -37,7 +37,7 @@ Groq API access and key
 
 Synthetic Facebook Ads dataset (synthetic_fb_ads_undergarments.csv)
 
-🧩 Installation
+### 🧩 Installation
 
 1. Clone this repository
 
@@ -74,13 +74,13 @@ data_path: data/synthetic_fb_ads_undergarments.csv
 
 You can also modify pipeline thresholds and parameters as needed.
 
-💻 Usage
+### 💻 Usage
 
 Run the full analysis pipeline by providing an analytic query:
 
 python src/run.py "Analyze ROAS drop in last 7 days"
 
-🔁 What Happens Next
+### 🔁 What Happens Next
 
 The intelligent multi-agent system executes these steps:
 
@@ -96,7 +96,7 @@ Creative Generator → Suggests optimized ad creatives
 
 Report Generator → Produces markdown, JSON, and trace logs
 
-📂 Folder Structure
+### 📂 Folder Structure
 kasparro-agentic-fb-analyst/
 │
 ├── README.md                     # This document
@@ -124,7 +124,7 @@ kasparro-agentic-fb-analyst/
 ├── logs/                         # Execution traces
 └── tests/                        # Unit tests
 
-📊 Outputs
+### 📊 Outputs
 
 After running the pipeline, you’ll get:
 
@@ -177,7 +177,7 @@ The evaluator checks each hypothesis against a confidence threshold (e.g., 0.6).
       "details": {
         "roas_change": 3.7935774557877355}
 
-📝 Notes
+### 📝 Notes
 
 To comply with data policy, only a small sample dataset (sample_fb_ads.csv) is included. For full analysis, update data_path in config.yaml to your complete dataset location.
 
