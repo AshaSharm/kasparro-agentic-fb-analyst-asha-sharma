@@ -175,7 +175,7 @@ The evaluator checks each hypothesis against a confidence threshold (e.g., 0.6).
       "evidence": "ROAS change of 3.79 detected",
       "quantitative_validation": true,
       "details": {
-        "roas_change": 3.7935774557877355
+        "roas_change": 3.7935774557877355}
 
 📝 Notes
 
