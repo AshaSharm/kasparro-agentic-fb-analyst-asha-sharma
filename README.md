@@ -1,32 +1,35 @@
-Kasparro Agentic Facebook Performance Analyst
+🧠 Kasparro Agentic Facebook Performance Analyst
+🚀 Overview
 
-Overview
+Kasparro Agentic FB Analyst is an AI-driven multi-agent system designed to analyze Facebook Ads performance.
+It autonomously diagnoses causes behind Return On Ad Spend (ROAS) fluctuations, generates data-driven hypotheses, validates them quantitatively, and recommends optimized creative messaging to improve campaign results.
 
-Kasparro Agentic FB Analyst is an AI-driven multi-agent system designed to analyze Facebook Ads performance. The system autonomously diagnoses causes behind Return On Ad Spend (ROAS) fluctuations, generates data-driven hypotheses, validates them quantitatively, and recommends optimized creative messaging to improve campaign results.
 
-Features
 
-Decomposes user queries into modular analytic subtasks
+🖼️ System Architecture
 
-Loads and cleans Facebook Ads dataset with detailed preprocessing
+✨ Key Features
 
-Generates insights and hypotheses about performance trends
+🧩 Decomposes user queries into modular analytic subtasks
 
-Validates hypotheses with rigorous quantitative metrics
+🧹 Loads and cleans Facebook Ads dataset with detailed preprocessing
 
-Produces actionable creative recommendations for weak campaigns
+📊 Generates insights and hypotheses about performance trends
 
-Produces detailed markdown and JSON reports for easy consumption
+📈 Validates hypotheses using rigorous quantitative metrics
 
-Fully integrates with Groq LLM API for language-model powered reasoning
+💡 Produces actionable creative recommendations for weak campaigns
 
-Modular LangChain-based architecture for flexible agent orchestration
+📝 Outputs detailed markdown and JSON reports for easy consumption
 
-Trace logs agent steps, reasoning, and outputs for reproducibility
+🤖 Integrates Groq LLM API for language-model powered reasoning
 
-Getting Started
+⚙️ LangChain-based modular architecture for flexible agent orchestration
 
-Prerequisites
+🧾 Trace logs all agent steps, reasoning, and outputs for reproducibility
+
+⚙️ Getting Started
+✅ Prerequisites
 
 Python 3.10+
 
@@ -34,108 +37,118 @@ Groq API access and key
 
 Synthetic Facebook Ads dataset (synthetic_fb_ads_undergarments.csv)
 
-Installation
-Clone this repository
+🧩 Installation
 
-Create and activate a virtual environment:
+1. Clone this repository
+
+git clone https://github.com/<your-username>/kasparro-agentic-fb-analyst.git
+cd kasparro-agentic-fb-analyst
+
+
+2. Create and activate a virtual environment
 
 python -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
-Install dependencies:
+source .venv/bin/activate       # Windows: .venv\Scripts\activate
+
+
+3. Install dependencies
 
 pip install -r requirements.txt
-Place the dataset file in the data/ directory.
 
-Configuration
-Edit config/config.yaml to specify:
 
-groq_api_key: Your Groq API key
+4. Place the dataset file in the data/ directory.
 
-groq_model: Active Groq model name (verify in Groq console)
+⚙️ Configuration
 
-data_path: Path to dataset CSV
+Edit the configuration file at:
 
-Other pipeline thresholds & parameters as needed
+config/config.yaml
 
-Usage
-Run the full analysis pipeline from the command line by providing an analytic query:
+
+Specify the following fields:
+
+groq_api_key: your_groq_api_key_here
+groq_model: your_active_groq_model_name
+data_path: data/synthetic_fb_ads_undergarments.csv
+
+
+You can also modify pipeline thresholds and parameters as needed.
+
+💻 Usage
+
+Run the full analysis pipeline by providing an analytic query:
 
 python src/run.py "Analyze ROAS drop in last 7 days"
-This triggers the intelligent multi-agent system that executes the following steps:
 
-Planner Agent: Interprets your query and defines subtasks
+🔁 What Happens Next
 
-Data Agent: Loads, cleans, preprocesses, and summarizes the dataset
+The intelligent multi-agent system executes these steps:
 
-Insight Agent: Generates hypotheses for performance shifts
+Planner Agent → Interprets your query and defines subtasks
 
-Evaluator Agent: Validates hypotheses with confidence scores
+Data Agent → Loads, cleans, and summarizes the dataset
 
-Creative Generator: Recommends improved ad creatives
+Insight Agent → Generates hypotheses for performance shifts
 
-Report Generation: Outputs markdown & JSON insights + logs
+Evaluator Agent → Validates hypotheses with confidence scores
 
-Folder Structure
+Creative Generator → Suggests optimized ad creatives
 
+Report Generator → Produces markdown, JSON, and trace logs
+
+📂 Folder Structure
 kasparro-agentic-fb-analyst/
 │
-├── README.md                # This document
-├── requirements.txt         # Python dependencies
+├── README.md                     # This document
+├── requirements.txt              # Python dependencies
 │
 ├── config/
-│   └── config.yaml         # Pipeline and API config
+│   └── config.yaml               # Pipeline and API configuration
 │
 ├── data/
-│   ├── synthetic_fb_ads_undergarments.csv  # Ads dataset CSV
-│   └── README.md            # Data schema and usage notes
+│   ├── synthetic_fb_ads_undergarments.csv  # Ads dataset
+│   └── README.md                 # Data schema & usage notes
 │
 ├── src/
-│   ├── run.py              # Main orchestrator
-│   └── agents/             # Modular LangChain agents
-│       ├── groq_llm.py     # Groq LLM wrapper
+│   ├── run.py                    # Main orchestrator
+│   └── agents/                   # Modular LangChain agents
+│       ├── groq_llm.py
 │       ├── planner.py
 │       ├── data_agent.py
 │       ├── insight_agent.py
 │       ├── evaluator.py
 │       └── creative_generator.py
 │
-├── prompts/                # LLM prompt templates
-│
-├── reports/                # Analysis outputs (md, json)
-│
-├── logs/                   # Execution traces
-│
-└── tests/                  # Unit tests
+├── prompts/                      # LLM prompt templates
+├── reports/                      # Analysis outputs (md, json)
+├── logs/                         # Execution traces
+└── tests/                        # Unit tests
 
+📊 Outputs
 
-Outputs
+After running the pipeline, you’ll get:
 
-After running the pipeline, outputs are generated in:
+File	Description
+reports/report.md	Human-readable summary and analysis report
+reports/insights.json	Validated hypotheses with confidence and evidence
+reports/creatives.json	Campaign-specific creative recommendations
+logs/trace.json	Workflow and agent execution trace for reproducibility
+🧩 Interpretation
 
-reports/report.md — Human-readable summary and analysis report
-
-reports/insights.json — Validated hypotheses with confidence & evidence
-
-reports/creatives.json — Campaign-specific creative recommendations
-
-logs/trace.json — Workflow and agent execution trace for reproducibility
-
-Interpretation
-The system thoroughly analyzes your query using dataset summaries and LLM-powered reasoning.
+The system analyzes your query using dataset summaries and LLM-powered reasoning.
 
 Hypotheses about ROAS drops, CTR issues, or creative fatigue are generated and quantitatively validated.
 
-Campaigns identified as underperforming receive personalized creative message suggestions.
+Underperforming campaigns receive personalized creative message suggestions.
 
-Reports provide clear, actionable insights that support data-driven marketing decisions.
+Reports deliver clear, actionable insights for data-driven marketing decisions.
 
+📝 Notes
 
-Notes
+✅ Ensure your Groq API key and model name are valid.
 
-Ensure your Groq API key & chosen model are current and valid.
+🧼 The system performs robust preprocessing to ensure data integrity.
 
-The system performs detailed preprocessing to ensure data integrity.
+🧠 Agents are modular — you can independently update or extend them.
 
-Modular agents can be individually updated or extended.
-
-Designed for clarity, robustness, and production readiness.
+🧩 Designed for clarity, robustness, and production readiness.
