@@ -4,7 +4,7 @@
 Kasparro Agentic FB Analyst is an AI-driven multi-agent system designed to analyze Facebook Ads performance.
 It autonomously diagnoses causes behind Return On Ad Spend (ROAS) fluctuations, generates data-driven hypotheses, validates them quantitatively, and recommends optimized creative messaging to improve campaign results.
 
-
+![image alt](https://github.com/AshaSharm/kasparro-agentic-fb-analyst-asha-sharma/blob/main/flowchart.png?raw=true)
 
 🖼️ System Architecture
 
