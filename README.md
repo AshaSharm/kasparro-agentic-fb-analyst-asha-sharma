@@ -143,7 +143,36 @@ Underperforming campaigns receive personalized creative message suggestions.
 
 Reports deliver clear, actionable insights for data-driven marketing decisions.
 
+## Reflection Loop Example
+The evaluator checks each hypothesis against a confidence threshold (e.g., 0.6). If any fall below, it would retry with a revised plan or data. In the example below, both hypotheses met threshold on the first attempt so only one attempt is logged.
+{
+  "attempt": 1,
+  "validated": [
+    {
+      "hypothesis": "ROAS dropped in the last period",
+      "confidence": 0.95,
+      "evidence": "ROAS change of 3.79 detected",
+      "quantitative_validation": true,
+      "details": {
+        "roas_change": 3.7935774557877355
+      }
+    },
+    {
+      "hypothesis": "Several campaigns have low CTR needing creative refresh",
+      "confidence": 0.9,
+      "evidence": "10 campaigns below CTR threshold",
+      "quantitative_validation": true,
+      "details": {
+        "low_ctr_count": 10
+      }
+    }
+  ]
+}
+
+
 📝 Notes
+
+To comply with data policy, only a small sample dataset (sample_fb_ads.csv) is included. For full analysis, update data_path in config.yaml to your complete dataset location.
 
 ✅ Ensure your Groq API key and model name are valid.
 
